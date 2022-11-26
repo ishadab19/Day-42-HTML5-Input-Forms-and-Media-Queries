@@ -18,7 +18,7 @@ function hello(event)
 function check(event)
 {
     event.preventDefault();
-    let emailRegex = /^[A-Z]{1}[a-z]{2,}$/;
+    let emailRegex = /^[a-zA-Z]+[.+-]?[A-Za-z0-9]*[@][A-Za-z0-9]+[.+-][A-Za-z0-9]{2,}[.]*[A-Za-z]*$/;
     let email = document.getElementById('name').value;
 
     if(!firstNameRegex.test(email))
